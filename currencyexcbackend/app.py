@@ -8,10 +8,6 @@ app = Flask(__name__)
 cors = CORS(app, origins=['http://localhost:4200'])
 app.config['CORS_HEADERS'] = 'application/json'
 
-@app.route('/')
-def hello():
-    return '<h1>Hello, World!</h1>'
-
 @app.route('/api/exchange')
 @cross_origin()
 def api1s():
